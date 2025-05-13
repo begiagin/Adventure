@@ -1,38 +1,18 @@
-.App {
-  text-align: center;
-}
+@font-face {  
+  font-family: 'Vazir';  
+  src: url('fonts/Vazir.eot'); /* IE9 Compat Modes */  
+  src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */  
+       url('fonts/Vazir.woff2') format('woff2'), /* Super Modern Browsers */  
+       url('fonts/Vazir.woff') format('woff'), /* Pretty Modern Browsers */  
+       url('fonts/Vazir.ttf') format('truetype');
+  font-weight: normal;  
+  font-style: normal;  
+}  
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Vazir';
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom_color {
+  word-wrap: break-word;
+  font-family: 'Courier New', Courier, monospace;
 }
