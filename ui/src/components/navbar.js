@@ -1,4 +1,7 @@
 import '../style/bootstrap.rtl.css'
+import '../style/App.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 function NavBar(){
     return(
@@ -48,14 +51,17 @@ function NavBar(){
               <li className="nav-item">
                 <a
                   class="nav-link"
-                  data-bs-toggle="offcanvas"
-                  href="#userMgmt"
                   role="button"
-                  aria-controls="offcanvasExample"
                   >مدیریت کابران</a
                 >
               </li>
             </ul>
+            <div className="d-flex"> 
+              <button className="btn btn-secondary my-2 my-sm-0">
+                پروفايل&nbsp;
+                <FontAwesomeIcon icon={faUser} size="1x" color='brwon' />
+              </button>
+            </div>
           </div>
         </div>
       </nav>
