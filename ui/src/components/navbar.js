@@ -2,13 +2,14 @@ import '../style/bootstrap.rtl.css'
 import '../style/App.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function NavBar(){
     return(
         <nav className="navbar navbar-expand-lg bg-primary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#"
-            >پولادنگار <strong className="text-success">وب</strong></a
+          <Link className="navbar-brand" to="/"
+            >ايده دوني <strong className="text-success">هل اتا</strong></Link
           >
           <button
             className="navbar-toggler"
@@ -49,11 +50,11 @@ function NavBar(){
                 >
               </li>
               <li className="nav-item">
-                <a
-                  class="nav-link"
+                <Link
+                  to="/"
+                  className="nav-link"
                   role="button"
-                  >مدیریت کابران</a
-                >
+                  >مدیریت کابران</Link>
               </li>
             </ul>
             <div className="d-flex"> 
